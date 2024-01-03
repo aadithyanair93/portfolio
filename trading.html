@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+       
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background:white;
+      }
+      nav {
+        margin-top: 0px;
+        display: flex;
+       color:blue;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background:white;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+      }
+      nav ul li a{
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+        color:rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 60px;
+      }
+      nav ul li:hover{
+        color:rgb(126, 121, 121);
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    .line{
+        display:none;
+        background-color: white;
+        height:0.125rem;
+        width:1.5rem;
+        padding:1px;
+       
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        margin-right: 4rem;
+      }
+      .details{
+        color:blue;
+      }
+      .details img{
+        width:800px;
+        height:400px;
+        margin:105px 252px;
+        
+
+      }
+      
+    @media only screen and (max-width: 450px) {
+    
+        nav ul li {
+          display: none;
+          flex-direction: column;
+        }
+        .line{
+          display: flex;
+          margin:-15px -24px;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">Aadithya's Portfolio</div>
+        
+  
+  
+    
+        <div class="right">
+          <ul>
+            <li><a href="#firstsection">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
+      </div>
+      </nav>
+      <main>
+        <div class="details">
+            <h2>Trading Buddy:</h2>
+            <span>Frontend Project created under Design Engineering Subject. It is a website for business person's. Created Using HTML & CSS.</span><br>
+            <img src="Home 1.png" alt="" id="image">
+            <button type="button" onclick="show()" id="btnID">
+              Show Image
+          </button>
+        </div>
+        <script>
+          function show() {
+              /* Get image and change value 
+              of src attribute */
+              let image = document.getElementById("image");
+              image.src = "home 1.png";
+              document.getElementById("btnID")
+                  .style.display = "";
+          }
+      </script>
+</body>
+</html>
