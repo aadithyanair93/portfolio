@@ -5,6 +5,7 @@
   
   nav {
     margin-top: 0px;
+   background-color:white;
     position: fixed;
      top: 0;
     z-index: 999;
@@ -341,6 +342,7 @@ margin-left:490px;
       background-size: cover;
     }
     .nav{
+     background-color:white;
       position: fixed;
       top: 0;
     z-index: 999;
