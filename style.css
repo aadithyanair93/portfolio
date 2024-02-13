@@ -5,7 +5,7 @@
   
   nav {
     margin-top: 0px;
-   background-color:white;
+   background-color:#fff;
     position: fixed;
      top: 0;
     z-index: 999;
@@ -19,7 +19,6 @@
     
   }
   .nav.nav-scrolled{
-
 padding: 15px 0;
 box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   }
@@ -342,7 +341,7 @@ margin-left:490px;
       background-size: cover;
     }
     .nav{
-     background-color:white;
+     background-color:#fff;
       position: fixed;
       top: 0;
     z-index: 999;
